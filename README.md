@@ -8,7 +8,11 @@ Este projeto implementa uma arquitetura orientada a eventos (*Event-Driven*) na 
 2. **SQS Queue**: Atua como buffer de eventos desassincronizados.
 3. **AWS Lambda (Python)**: Processa automaticamente as mensagens acionadas pela fila SQS.
 
-4. [S3 Bucket] ➔ [SQS Queue] ➔ [Lambda Function]
+```mermaid
+graph LR
+    A[📦 S3 Bucket] -->|Event Trigger| B[✉️ SQS Queue]
+    B -->|Event Source Mapping| C[⚡ AWS Lambda]
+````
 
 
 ## 🛠️ Tecnologias Utilizadas
