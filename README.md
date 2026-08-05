@@ -36,12 +36,3 @@ Teste a arquitetura enviando um arquivo para o S3:
 docker exec -it localstack_main awslocal s3 cp /etc/hosts s3://cloudstatus-telemetry-data/dados-lambda.txt
 
 ---
-
-**3. Envie o README para o GitHub**
-
-No terminal do VS Code, rode:
-
-```powershell
-git add README.md
-git commit -m "docs: add project readme file"
-git push
