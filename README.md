@@ -36,3 +36,5 @@ Teste a arquitetura enviando um arquivo para o S3:
 docker exec -it localstack_main awslocal s3 cp /etc/hosts s3://cloudstatus-telemetry-data/dados-lambda.txt
 
 ---
+
+### Desenvolvido por Pedro Henrique 🚀
